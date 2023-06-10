@@ -8,9 +8,11 @@
 int main() {
 int sum=0;
 int dice[2];
-    
+char name[100];
     srand(time(NULL));
-    
+    printf("What you are name?\n >");
+    scanf("%s",name);
+    printf("Hello,%s!\n",name);
     printf("Rolling dice...\n");
         for(int i=0; i < 2; i++){
             dice[i] = (rand() % max) + min;
